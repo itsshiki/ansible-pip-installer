@@ -44,8 +44,8 @@ date &>> ./install.log
 execute_stuff "Collecting password for sudo if needed" \
                 "sudo bash -c exit 0" \
                 skippls
-execute_stuff "Installing python3-virtualenv" \
-                "DEBIAN_FRONTEND=noninteractive sudo apt-get install python3-virtualenv"
+execute_stuff "Installing python3-venv" \
+                "DEBIAN_FRONTEND=noninteractive sudo apt-get install python3-venv -y"
 execute_stuff "Creating virtualenv for Ansible" \
                 "python3 -m venv venv"
 execute_stuff "Activating virtualenv" \
