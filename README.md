@@ -12,7 +12,7 @@ When you're done you can just close your terminal or ```deactivate``` the virtua
 
 ## What are all these files for?!
 ### Minimum needed files:
-* ```ìnstall.sh```: Installs ```python3-virtualenv``` via ```apt```, creates a virtualenv, installs ```ansible```, ```ansible-lint``` and ```yamllint``` into it and installs all collections and roles written into the ```requirements.yml```
+* ```install.sh```: Installs ```python3-virtualenv``` via ```apt```, creates a virtualenv, installs ```ansible```, ```ansible-lint``` and ```yamllint``` into it and installs all collections and roles written into the ```requirements.yml```
 * ```requirements.txt```: Contents all Python modules needed for Ansible and linting with the ```lint.sh``` script
   * You can expand it with other Python modules if you want to! Or remove those ugly linters, yuck.
 * ```requirements.yml```: Is needed by ansible-galaxy; It contents the collections and roles you need for your playbook(s) (you should ask Google again here if you don't know about ansible-galaxy)
